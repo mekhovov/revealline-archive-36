@@ -28,5 +28,13 @@
   "expectedBytes": 653831399,
   "productionHelpersChanged": false,
   "mainPublisherDependency": "PR189 actual public acceptance before this archive merge/deploy",
-  "status": "prepared; not deployed or accepted"
+  "status": "prepared; not deployed or accepted",
+  "retentionReview": {
+    "mainPublisherCommit": "cb55248a2fd01b2bfccc5ebbce48a524f30ec382",
+    "deploymentId": 6552582851,
+    "publicAuditSha256": "e20c5c5c131768f78022a05a0f0545e22832139f8241bac2d1885145153ee664",
+    "publicFiles": 3789,
+    "publicBytes": 698351359,
+    "acceptance": "Scoped public byte and keyboard evidence only; open native issues carried in README. Archive acceptance still pending."
+  }
 }

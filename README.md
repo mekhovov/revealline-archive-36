@@ -9,9 +9,9 @@ Preserves original **v0.68.2** and **v0.69.0** release ZIP bytes without histori
 
 Expected **1,506 files / 653,831,399 bytes**, below the unchanged 800,000,000-byte budget. All **726 original v0.68.2 release paths** and their exact bytes remain; only the landing index changes among the 729 previously accepted paths.
 
-The initial v0.68.2 archive passed a complete public byte audit and a scoped keyboard entry/Continue/Pause journey. This v0.69.0 append is prepared only: hosted extraction, deployment, full public-byte audit and native entry remain required. Do not merge/deploy this append until the main v0.69.0 publisher has completed its existing public verification.
+The initial v0.68.2 archive passed a complete public byte audit and a scoped keyboard entry/Continue/Pause journey. The main v0.69.0 publisher completed deployment 6552582851 and its complete public-byte audit (3,789 files / 698,351,359 bytes; zero failures). A scoped keyboard win, Next, pause and saved-flight continuation were inspected. The broader feature gate remains open for the issues below. This archive append preserves the exact partially accepted edition; it still requires its own hosted extraction, public-byte audit and native entry before archive admission.
 
-Both originals retain the known picture-assignment installation conflict, corrected separately in the unpublished v0.69.1 candidate. Retention does not establish complete feature, physical-input, audible-media or offline acceptance.
+Both originals retain the known picture-assignment installation conflict. The main v0.69.0 native checks additionally found stale feedback when cancelling title Continue and clipped Main menu focus at 844×390 with Large/Plain text. The first two corrections are in separately published v0.69.1; pause clearance remains in the v0.69.2 candidate. Retention does not establish complete feature, physical-input, audible-media or offline acceptance. The scoped accepted baseline remains v0.68.2, with its stated limitations.
 
 ## Correction of the initial README
 
