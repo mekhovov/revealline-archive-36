@@ -233,8 +233,8 @@ class CohortTests(unittest.TestCase):
 class CommittedMetadataTests(unittest.TestCase):
     def test_exact_original_metadata_and_source_qualification(self):
         lock, inventory = locked_inputs(ROOT)
-        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (729, 313829048))
-        self.assertEqual([r['version'] for r in lock['releases']], ['v0.68.2'])
+        self.assertEqual((lock['expectedFiles'], lock['expectedBytes']), (1506, 653831399))
+        self.assertEqual([r['version'] for r in lock['releases']], ['v0.68.2', 'v0.69.0'])
         self.assertEqual(inventory['base'], 'https://mekhovov.github.io/revealline-archive-36/')
         release = lock['releases'][0]
         self.assertEqual(release['tagObject'], '222c5f1eee4bfc2db5cad8a3991aa51fafc77b65')
@@ -244,6 +244,12 @@ class CommittedMetadataTests(unittest.TestCase):
         cohort = [r for r in inventory['files'] if r['path'].startswith('releases/v0.68.2/')]
         self.assertEqual(len(cohort), 726)
         self.assertEqual(sum(r['bytes'] for r in cohort), 313827654)
+        new = lock['releases'][1]
+        self.assertEqual(new['sourceRevision'], '5178c434e9dbbbd8287530c92daa64978e886e76')
+        self.assertEqual(new['tagObject'], 'dfdeca8b9f56e40674f2c6369f9b4dc0e5e7b25d')
+        self.assertEqual(new['sourceTree'], '8e1becb43cc8d60a0ad4f6c727bd563e9bdd520d')
+        cohort = [r for r in inventory['files'] if r['path'].startswith('releases/v0.69.0/')]
+        self.assertEqual((len(cohort), sum(r['bytes'] for r in cohort)), (777, 340002272))
 
     def test_changed_or_wrong_identity_qualification_refuses(self):
         import shutil
