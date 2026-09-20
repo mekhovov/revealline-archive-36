@@ -1,0 +1,14 @@
+{
+  "version": "v0.68.2",
+  "releaseId": 392361562,
+  "source": "aadd855eb707c7d115bcbd29177eadb630a114d0",
+  "tree": "02080a77ecb6a10a487c542324baf6bd51595702",
+  "tagObject": "222c5f1eee4bfc2db5cad8a3991aa51fafc77b65",
+  "priorAcceptedPaths": 0,
+  "donor": ".cache/archive35-v0680-r1/candidate",
+  "publicReview": ".cache/v0682-public-audit-preparation-r1/runs/acceptance-d5-final/report.json",
+  "archivePublicAcceptance": false,
+  "limits": [
+    "Retention preserves scopedv0682acceptance; retained-picture conflict remains open and is corrected separatelyinPR188."
+  ]
+}
